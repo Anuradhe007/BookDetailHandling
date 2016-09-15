@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="886.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="systemcore.bookdetails.BookDetailsController">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="පරිග්‍රහණ තොරතුරු">
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <center>
+                        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox prefHeight="53.0" prefWidth="842.0">
+                                 <children>
+                                    <Label lineSpacing="10.0" prefHeight="27.0" prefWidth="268.0" text="පරිග්‍රහණ අංකය">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></Label>
+                                    <Region prefHeight="55.0" prefWidth="15.0" />
+                                    <TextField fx:id="book_id" prefHeight="39.0" prefWidth="239.0">
+                                       <opaqueInsets>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </opaqueInsets>
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></TextField>
+                                    <Label text="වර්ග අංකය">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></Label>
+                                    <TextField fx:id="type_id" prefHeight="39.0" prefWidth="180.0">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="20.0" top="8.0" />
+                                       </HBox.margin></TextField>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                 </opaqueInsets>
+                              </HBox>
+                              <HBox prefHeight="53.0" prefWidth="905.0">
+                                 <children>
+                                    <Label prefHeight="27.0" prefWidth="268.0" text="කබඩ් අංකය">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></Label>
+                                    <Region prefHeight="55.0" prefWidth="15.0" />
+                                    <TextField fx:id="cupboard_no" prefHeight="39.0" prefWidth="177.0">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></TextField>
+                                    <Region prefHeight="55.0" prefWidth="48.0" />
+                                    <Region prefHeight="55.0" prefWidth="0.0" />
+                                    <Label prefHeight="27.0" prefWidth="109.0" text="ප්‍රවේශ දිනය">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></Label>
+                                    <DatePicker fx:id="added_date" prefHeight="39.0" prefWidth="154.0">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></DatePicker>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                 </opaqueInsets>
+                              </HBox>
+                              <HBox prefHeight="53.0" prefWidth="905.0">
+                                 <children>
+                                    <Label prefHeight="27.0" prefWidth="268.0" text="ග්‍රන්ථ නාමය">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></Label>
+                                    <Region prefHeight="55.0" prefWidth="15.0" />
+                                    <TextField fx:id="book_name" prefHeight="39.0" prefWidth="536.0">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></TextField>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                 </opaqueInsets>
+                              </HBox>
+                              <HBox prefHeight="53.0" prefWidth="905.0">
+                                 <children>
+                                    <Label prefHeight="27.0" prefWidth="268.0" text="කතෘ">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></Label>
+                                    <Region prefHeight="55.0" prefWidth="15.0" />
+                                    <TextField fx:id="author" prefHeight="39.0" prefWidth="536.0">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></TextField>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                 </opaqueInsets>
+                              </HBox>
+                              <HBox prefHeight="53.0" prefWidth="1047.0">
+                                 <children>
+                                    <Label prefHeight="39.0" prefWidth="268.0" text="ප්‍රකාශක හා ප්‍රකාශිත ස්ථානය">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></Label>
+                                    <Region prefHeight="55.0" prefWidth="15.0" />
+                                    <TextField fx:id="publisher" prefHeight="39.0" prefWidth="536.0">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></TextField>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                 </opaqueInsets>
+                              </HBox>
+                              <HBox prefHeight="53.0" prefWidth="905.0">
+                                 <children>
+                                    <Label prefHeight="27.0" prefWidth="268.0" text="ප්‍රකාශිත දිනය හා මුද්‍රණය">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></Label>
+                                    <Region prefHeight="55.0" prefWidth="15.0" />
+                                    <TextField fx:id="published_date" prefHeight="39.0" prefWidth="536.0">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></TextField>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                 </opaqueInsets>
+                              </HBox>
+                              <HBox prefHeight="53.0" prefWidth="905.0">
+                                 <children>
+                                    <Label prefHeight="27.0" prefWidth="268.0" text=" පිටු ගණන">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></Label>
+                                    <Region prefHeight="55.0" prefWidth="15.0" />
+                                    <TextField fx:id="pages" prefHeight="39.0" prefWidth="245.0">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></TextField>
+                                    <Region prefHeight="55.0" prefWidth="37.0" />
+                                    <Label text="මිල (රු)">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></Label>
+                                    <TextField fx:id="price" prefHeight="39.0" prefWidth="178.0">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></TextField>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                 </opaqueInsets>
+                              </HBox>
+                              <HBox prefHeight="53.0" prefWidth="1047.0">
+                                 <children>
+                                    <Label prefHeight="27.0" prefWidth="268.0" text="සැපයුම් මාධ්‍යය">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></Label>
+                                    <Region prefHeight="55.0" prefWidth="15.0" />
+                                    <TextField fx:id="supply_medium" prefHeight="39.0" prefWidth="536.0">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></TextField>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                 </opaqueInsets>
+                              </HBox>
+                              <HBox prefHeight="183.0" prefWidth="1047.0">
+                                 <children>
+                                    <Label prefHeight="27.0" prefWidth="284.0" text="වෙනත් කරුණු">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></Label>
+                                    <TextArea fx:id="other_facts" prefHeight="167.0" prefWidth="536.0">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></TextArea>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </opaqueInsets>
+                              </HBox>
+                              <HBox prefHeight="53.0" prefWidth="1047.0">
+                                 <children>
+                                    <Button fx:id="save_button" mnemonicParsing="false" onAction="#saveButtonClicked" text="Save">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></Button>
+                                    <Button fx:id="cancel_button" mnemonicParsing="false" onAction="#cancelButtonClicked" text="Cancel">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin></Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </center>
+                     <top>
+                        <VBox prefHeight="85.0" prefWidth="855.0" BorderPane.alignment="CENTER" />
+                     </top>
+                     <left>
+                        <VBox prefHeight="756.0" prefWidth="19.0" BorderPane.alignment="CENTER" />
+                     </left>
+                  </BorderPane>
+               </content>
+          </Tab>
+          <Tab text="තොරතුරු සෙවීම">
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <top>
+                        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox prefHeight="33.0" prefWidth="1000.0" />
+                              <HBox prefHeight="57.0" prefWidth="1000.0">
+                                 <children>
+                                    <Label text="පරිග්‍රහණ අංකය" />
+                                    <TextField fx:id="book_id_search" />
+                                    <Button mnemonicParsing="false" onAction="#searchBookId" text="සොයන්න" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="74.0" prefWidth="1000.0">
+                                 <children>
+                                    <Label prefHeight="27.0" prefWidth="152.0" text="කබඩ් අංකය" />
+                                    <TextField />
+                                    <Button mnemonicParsing="false" text="සොයන්න" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="27.0" prefWidth="166.0" text="ග්‍රන්ථ නාමය" />
+                                    <TextField />
+                                    <Button mnemonicParsing="false" text="සොයන්න" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="සියලුම පොත්" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </top></BorderPane>
+               </content>
+          </Tab>
+            <Tab text="තොරතුරු වෙනස් කිරීම">
+                <content>
+                    <BorderPane prefHeight="200.0" prefWidth="200.0">
+                        <center>
+                            <VBox prefHeight="713.0" prefWidth="927.0" BorderPane.alignment="CENTER">
+                                <children>
+                                    <HBox prefHeight="53.0" prefWidth="842.0">
+                                        <children>
+                                            <Label prefHeight="27.0" prefWidth="268.0" text="වර්ග අංකය">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></Label>
+                                    <Region prefHeight="55.0" prefWidth="15.0" />
+                                            <TextField fx:id="type_id_edit" prefHeight="39.0" prefWidth="536.0">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="20.0" top="8.0" />
+                                                </HBox.margin></TextField>
+                                        </children>
+                                        <opaqueInsets>
+                                            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                        </opaqueInsets>
+                                    </HBox>
+                                    <HBox prefHeight="53.0" prefWidth="905.0">
+                                        <children>
+                                            <Label prefHeight="27.0" prefWidth="268.0" text="කබඩ් අංකය">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></Label>
+                                            <Region prefHeight="55.0" prefWidth="15.0" />
+                                            <TextField fx:id="cupboard_no_edit" prefHeight="39.0" prefWidth="177.0">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></TextField>
+                                            <Region prefHeight="55.0" prefWidth="48.0" />
+                                            <Region prefHeight="55.0" prefWidth="0.0" />
+                                            <Label prefHeight="27.0" prefWidth="109.0" text="ප්‍රවේශ දිනය">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></Label>
+                                            <DatePicker fx:id="added_date_edit" prefHeight="39.0" prefWidth="154.0">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></DatePicker>
+                                        </children>
+                                        <opaqueInsets>
+                                            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                        </opaqueInsets>
+                                    </HBox>
+                                    <HBox prefHeight="53.0" prefWidth="905.0">
+                                        <children>
+                                            <Label prefHeight="27.0" prefWidth="268.0" text="ග්‍රන්ථ නාමය">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></Label>
+                                            <Region prefHeight="55.0" prefWidth="15.0" />
+                                            <TextField fx:id="book_name_edit" prefHeight="39.0" prefWidth="536.0">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></TextField>
+                                        </children>
+                                        <opaqueInsets>
+                                            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                        </opaqueInsets>
+                                    </HBox>
+                                    <HBox prefHeight="53.0" prefWidth="905.0">
+                                        <children>
+                                            <Label prefHeight="27.0" prefWidth="268.0" text="කතෘ">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></Label>
+                                            <Region prefHeight="55.0" prefWidth="15.0" />
+                                            <TextField fx:id="author_edit" prefHeight="39.0" prefWidth="536.0">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></TextField>
+                                        </children>
+                                        <opaqueInsets>
+                                            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                        </opaqueInsets>
+                                    </HBox>
+                                    <HBox prefHeight="53.0" prefWidth="1047.0">
+                                        <children>
+                                            <Label prefHeight="39.0" prefWidth="268.0" text="ප්‍රකාශක හා ප්‍රකාශිත ස්ථානය">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></Label>
+                                            <Region prefHeight="55.0" prefWidth="15.0" />
+                                            <TextField fx:id="publisher_edit" prefHeight="39.0" prefWidth="536.0">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></TextField>
+                                        </children>
+                                        <opaqueInsets>
+                                            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                        </opaqueInsets>
+                                    </HBox>
+                                    <HBox prefHeight="53.0" prefWidth="905.0">
+                                        <children>
+                                            <Label prefHeight="27.0" prefWidth="268.0" text="ප්‍රකාශිත දිනය හා මුද්‍රණය">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></Label>
+                                            <Region prefHeight="55.0" prefWidth="15.0" />
+                                            <TextField fx:id="published_date_edit" prefHeight="39.0" prefWidth="536.0">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></TextField>
+                                        </children>
+                                        <opaqueInsets>
+                                            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                        </opaqueInsets>
+                                    </HBox>
+                                    <HBox prefHeight="53.0" prefWidth="905.0">
+                                        <children>
+                                            <Label prefHeight="27.0" prefWidth="268.0" text=" පිටු ගණන">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></Label>
+                                            <Region prefHeight="55.0" prefWidth="15.0" />
+                                            <TextField fx:id="pages_edit" prefHeight="39.0" prefWidth="245.0">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></TextField>
+                                            <Region prefHeight="55.0" prefWidth="37.0" />
+                                            <Label text="මිල (රු)">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></Label>
+                                            <TextField fx:id="price_edit" prefHeight="39.0" prefWidth="178.0">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></TextField>
+                                        </children>
+                                        <opaqueInsets>
+                                            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                        </opaqueInsets>
+                                    </HBox>
+                                    <HBox prefHeight="53.0" prefWidth="1047.0">
+                                        <children>
+                                            <Label prefHeight="27.0" prefWidth="268.0" text="සැපයුම් මාධ්‍යය">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></Label>
+                                            <Region prefHeight="55.0" prefWidth="15.0" />
+                                            <TextField fx:id="supply_medium_edit" prefHeight="39.0" prefWidth="536.0">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></TextField>
+                                        </children>
+                                        <opaqueInsets>
+                                            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                        </opaqueInsets>
+                                    </HBox>
+                                    <HBox prefHeight="183.0" prefWidth="1047.0">
+                                        <children>
+                                            <Label prefHeight="27.0" prefWidth="282.0" text="වෙනත් කරුණු">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></Label>
+                                            <TextArea fx:id="other_facts_edit" prefHeight="167.0" prefWidth="536.0">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></TextArea>
+                                        </children>
+                                        <opaqueInsets>
+                                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                        </opaqueInsets>
+                                    </HBox>
+                                    <HBox prefHeight="53.0" prefWidth="1047.0">
+                                        <children>
+                                            <Button fx:id="save_button_edit" mnemonicParsing="false" text="Save">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></Button>
+                                            <Button fx:id="cancel_button_edit" mnemonicParsing="false" onAction="#cancelButtonEdit" text="Cancel">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></Button>
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                        </center>
+                        <top>
+                            <VBox prefHeight="128.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox prefHeight="81.0" prefWidth="1000.0" />
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                            <Label lineSpacing="10.0" prefHeight="27.0" prefWidth="268.0" text="   පරිග්‍රහණ අංකය">
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin>
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font></Label>
+                                    <Region prefHeight="74.0" prefWidth="32.0" />
+                                            <TextField fx:id="book_id_edit" prefHeight="39.0" prefWidth="260.0">
+                                                <opaqueInsets>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </opaqueInsets>
+                                                <HBox.margin>
+                                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                                </HBox.margin></TextField>
+                                    <Button fx:id="search_edit" mnemonicParsing="false" onAction="#searchButtonClicked" prefHeight="39.0" prefWidth="115.0" text="සොයන්න">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children></VBox>
+                        </top>
+                        <left>
+                            <VBox prefHeight="756.0" prefWidth="19.0" BorderPane.alignment="CENTER" />
+                        </left>
+                    </BorderPane>
+                </content>
+            </Tab>
+            <Tab text="ඉවත් කිරීම">
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <top>
+                        <VBox prefHeight="123.0" prefWidth="1147.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox prefHeight="123.0" prefWidth="1000.0" />
+                              <HBox prefHeight="21.0" prefWidth="1000.0" spacing="6.0">
+                                 <children>
+                                    <Region prefHeight="200.0" prefWidth="200.0" />
+                                    <Label text="පරිග්‍රහණ අංකය">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </padding></Label>
+                                    <TextField fx:id="bookId_delete" prefHeight="57.0" prefWidth="218.0">
+                                       <padding>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </padding></TextField>
+                                    <Button mnemonicParsing="false" onAction="#deleteButtonClicked" prefHeight="54.0" prefWidth="135.0" text="ඉවත් කරන්න">
+                                       <padding>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </padding></Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </top>
+                     <left>
+                        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+                     </left>
+                     <bottom>
+                        <VBox prefHeight="76.0" prefWidth="1147.0" BorderPane.alignment="CENTER" />
+                     </bottom>
+                     <center>
+                        <VBox prefHeight="591.0" prefWidth="900.0" BorderPane.alignment="CENTER" />
+                     </center>
+                  </BorderPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

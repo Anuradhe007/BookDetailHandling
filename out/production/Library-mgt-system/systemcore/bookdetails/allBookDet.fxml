@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<TableView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="861.0" prefWidth="1327.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <columns>
+      <TableColumn fx:id="nmberof_books" prefWidth="78.0" text="Nmb of" />
+      <TableColumn fx:id="book_id" minWidth="2.0" prefWidth="136.0" text="book_id" />
+      <TableColumn fx:id="added_date" prefWidth="68.0" text="added_date" />
+      <TableColumn fx:id="type_id" prefWidth="73.0" text="type_id" />
+      <TableColumn fx:id="author" prefWidth="68.0" text="author" />
+      <TableColumn fx:id="book_name" prefWidth="89.0" text="name" />
+      <TableColumn fx:id="publisher" prefWidth="97.0" text="publisher" />
+      <TableColumn fx:id="pub_date" prefWidth="142.0" text="pub_date" />
+      <TableColumn fx:id="pages" prefWidth="58.0" text="pages" />
+      <TableColumn fx:id="price" prefWidth="67.0" text="price" />
+      <TableColumn fx:id="supplier" prefWidth="77.0" text="supp" />
+      <TableColumn fx:id="others" prefWidth="181.0" text="others" />
+      <TableColumn fx:id="cupboard_id" prefWidth="91.0" text="cupboard" />
+      <TableColumn fx:id="availability" prefWidth="91.0" text="Column X" />
+   </columns>
+</TableView>
